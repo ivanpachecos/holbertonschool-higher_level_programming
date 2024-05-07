@@ -2,4 +2,4 @@
 
 number = 3.14159
 result = format(number, ".2f")
-print(f"{result}")
+print(f"Float: {result}")
