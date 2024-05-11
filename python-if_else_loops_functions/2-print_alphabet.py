@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 # start and end ----section char imprimibles
 star = 97
 end = 122
