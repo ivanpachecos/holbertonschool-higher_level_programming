@@ -5,4 +5,4 @@ star = 97
 end = 122
 # using function char
 for n in range(star, end):
-    print(f"{chr(n)}")
+    print("{}".format(chr(n)))
