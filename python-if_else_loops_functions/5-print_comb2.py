@@ -5,4 +5,4 @@ for n in range(0, 100):
         print("{:02d}".format(n), end=", ")
         continue
     else:
-        print(n)
+        print("{}".format(n))
