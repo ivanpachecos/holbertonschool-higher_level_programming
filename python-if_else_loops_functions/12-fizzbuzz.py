@@ -12,4 +12,3 @@ def fizzbuzz():
             print("{}".format(chr(n - 64)), end="")
         else:
             print(n, end=" ")
-    
