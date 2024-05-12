@@ -8,6 +8,8 @@ def fizzbuzz():
             print("Fizz", end=" ")
         elif n % 5 == 0:
             print("Buzz", end=" ")
+        elif n == 100:
+            print("{}".format(chr(n - 64)), end="")
         else:
             print(n, end=" ")
-    print("{}".format(chr(n - 64)), end="")
+    
