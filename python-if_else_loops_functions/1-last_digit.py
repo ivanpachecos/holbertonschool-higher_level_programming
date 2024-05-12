@@ -12,6 +12,6 @@ str_less = "and is less than 6 and not 0"
 if last_digit > 5:
     print("{}{} is {} {}".format(str, number, last_digit, str_more))
 elif last_digit == 0:
-    print("{}{} is {} {} and is 0".format(str, number, last_digit, str_zero))
+    print("{}{} is {} {}".format(str, number, last_digit, str_zero))
 else:
     print("{}{} is {} {}".format(str, number, last_digit, str_less))
