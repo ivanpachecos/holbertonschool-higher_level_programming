@@ -10,4 +10,4 @@ def fizzbuzz():
             print("Buzz", end=" ")
         else:
             print(n, end=" ")
-    print(chr(36))
+    print("{}".format(chr(36)), end="")
