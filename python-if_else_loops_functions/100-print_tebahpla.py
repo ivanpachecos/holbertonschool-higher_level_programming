@@ -8,4 +8,4 @@ for word in range(122, 96, -1):
     else:
         save_string += chr(word - 32)
 
-print(save_string)
+print("{}".format(save_string))
