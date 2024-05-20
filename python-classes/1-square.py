@@ -5,8 +5,8 @@
 class Square():
     """square"""
 
-    """
-        Private instance attribute: size
-    """
     def __init__(self, size) -> None:
-        self.__prv_attribute = size
+        """
+            size of square
+        """
+        self.__prv_size = size
