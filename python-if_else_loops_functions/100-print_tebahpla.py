@@ -1,11 +1,8 @@
 #!/usr/bin/python3
 
-save_string = ""
-
-for word in range(122, 96, -1):
-    if word % 2 == 0:
-        save_string += chr(word)
+for i in range(122, 96, -1):
+    if i % 2 == 0:
+        print("{}".format(chr(i)), end="")
     else:
-        save_string += chr(word - 32)
-
-print("{}".format(save_string))
+        print("{}".format(chr(i - 32)), end="")
+        
