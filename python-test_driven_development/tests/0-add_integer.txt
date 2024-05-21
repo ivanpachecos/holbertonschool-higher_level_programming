@@ -1,0 +1,58 @@
+The ``add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+This is an example text file in reStructuredText format.  First import
+``add_integer`` from the ``0-add_integer`` module:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Now use it:
+    """
+        Adds two integers or floats and returns the sum as 
+        an integer
+
+    Args:
+        a (int, float): The first number
+        b (int, float optional): The second number. Defaults to 98.
+
+    Returns:
+        int: The sum of two numbers, a and b.
+    """
+
+    >>> add_integer(1, 2)
+    3
+
+    >>> add_integer(100, -2)
+    98
+
+    >>> add_integer(2)
+    100
+
+    >>> add_integer(100.3, -2)
+    98
+
+    >>> add_integer(-20, -20)
+    -40
+
+    ------------------Error----------------------
+    """
+        Raises:
+        TypeError: if either a or b is not an integer or float
+    """
+    >>> add_integer(4, "School")
+    Traceback (most recent call last):
+        ...
+    TypeError: a must br an integer
+
+    >>> add_integer(None)
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+    >>> add_integer("Hello", "School")
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
