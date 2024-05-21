@@ -34,19 +34,23 @@ Now use it:
     >>> add_integer(100.3, -2)
     98
 
-    >>> add_integer(-20, -20)
-    -40
+    >>> add_integer(20, 29.3)
+    49
+
+    ---------------------------------------------
 
     ------------------Error----------------------
+
     """
         Raises:
         TypeError: if either a or b is not an integer or float
     """
+
     >>> add_integer(4, "School")
     Traceback (most recent call last):
         ...
     TypeError: b must be an integer
-
+    
     >>> add_integer(None)
     Traceback (most recent call last):
         ...
