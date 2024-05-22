@@ -19,6 +19,9 @@ First import
         ...
     ZeroDivisionError: division by zero
 
+    >>> matrix = [[2, 3], [5, 8]]               
+    >>> matrix_divided(matrix, float('inf'))
+    [[0.0, 0.0], [0.0, 0.0]]
 
     ===================================================
                     error
