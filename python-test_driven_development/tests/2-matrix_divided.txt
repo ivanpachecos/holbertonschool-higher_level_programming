@@ -37,15 +37,6 @@ Now use it:
     >>> matrix_divided(matrix, 3)
     [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 
-    >>> matrix = [
-    ...     [1, 2, 3],
-    ...     [4, 5, 'hello']
-    ... ]
-    >>> matrix_divided(matrix, 3)
-    Traceback (most recent call last):
-        ...
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
-
 
     ---------------------------------------------
 
@@ -55,3 +46,22 @@ Now use it:
         Raises:
         TypeError: if either a or b is not an integer or float
     """
+
+    >>> matrix = [
+    ...     ['1', '2', '3'],
+    ...     ['4', '5', '2']
+    ... ]
+    >>> matrix_divided(matrix, 3)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix = [
+    ...     [1, 2, 3],
+    ...     [4, 5, 6]
+    ... ]
+    >>> matrix_divided(matrix, 0)
+    Traceback (most recent call last):
+        ...
+    ZeroDivisionError: division by zero
+
