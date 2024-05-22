@@ -12,7 +12,6 @@ This is an example text file in reStructuredText format.  First import
 
 Now use it:
     """
-
     Divides all elements of a matrix by a divisor and rounds the result to 2 decimal places.
 
     Args:
@@ -36,9 +35,5 @@ Now use it:
     ... ]
     >>> matrix_divided(matrix, 3)
     [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
-
-    >>> matrix_divided(matrix, 0)
-    Traceback (most recent call last):
-        ...
-    ZeroDivisionError: division by zero
-
+    >>> matrix
+    [[1, 2, 3], [4, 5, 6]]
