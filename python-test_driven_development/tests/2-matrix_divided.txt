@@ -1,0 +1,43 @@
+The ``matrix_divided`` module
+======================
+
+Using ``matrix_divided``
+-------------------
+
+This is an example text file in reStructuredText format.  First import
+``matrix_divided`` from the ``0-matrix_divided`` module:
+
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+
+Now use it:
+    """
+
+    Divides all elements of a matrix by a divisor and rounds the result to 2 decimal places.
+
+    Args:
+        matrix (list of lists of int/float): The matrix to be divided.
+        div (int/float): The divisor.
+
+    Raises:
+        TypeError: If the matrix is not a list of lists of integer or float.
+        TypeError: If the rows of the matrix are not the same size.
+        TypeError: If any element of the array is not an integer or float.
+        ZeroDivisionError: If the divisor is zero.
+        TypeError: If the divisor is not a number (integer or float).
+
+    Returns:
+        list of lists of float: New array with the elements divided and rounded to 2 decimal places.
+    """
+
+    
+
+
+    ---------------------------------------------
+
+    ------------------Error----------------------
+
+    """
+        Raises:
+        TypeError: if either a or b is not an integer or float
+    """
