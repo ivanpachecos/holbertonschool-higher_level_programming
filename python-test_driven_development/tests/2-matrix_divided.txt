@@ -61,4 +61,4 @@ First import
     Traceback (most recent call last):
         ...
     TypeError: div must be a number
-    >>> 
+    
