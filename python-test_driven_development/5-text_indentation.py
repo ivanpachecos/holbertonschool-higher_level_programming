@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-This script contains a function to insert a newline followed by two spaces after
-each occurrence of '.', '?', or ':' in the given text.
+This script contains a function to insert a newline followed by two spaces
+after each occurrence of '.', '?', or ':' in the given text.
 """
 
 
@@ -14,7 +14,8 @@ def text_indentation(text):
         text (str): The input text.
 
     Returns:
-        None. The function prints the modified text with the specified indentation.
+        None. The function prints the modified text with the specified
+        indentation.
     """
 
     if not isinstance(text, (str)):
