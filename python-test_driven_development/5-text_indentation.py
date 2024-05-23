@@ -21,9 +21,9 @@ def text_indentation(text):
     if not isinstance(text, (str)):
         raise TypeError("text must be a string")
 
-    tex1 = text.replace(".", ".\n \n")
-    tex2 = tex1.replace("?", "?\n \n")
-    tex3 = tex2.replace(":", ":\n \n")
+    tex1 = text.replace(".", ".\n")
+    tex2 = tex1.replace("?", "?\n")
+    tex3 = tex2.replace(":", ":\n")
 
     # Print the modified text
     print(tex3)
