@@ -10,8 +10,10 @@ This is an example text file in reStructuredText format. First import
     >>> text_indentation = __import__('4-text_indentation').text_indentation
 
 Now use it:
+
     >>> text_indentation("Holberton School")
     Holberton School
+
     >>> text_indentation("Holberton.School")
     Holberton.
  
