@@ -19,7 +19,8 @@ Now use it:
 
     >>> text_indentation("Holberton School")
     Holberton School
-    
+
+    >>>
     >>> text_indentation("Holberton School")
     Holberton School
     >>> text_indentation("Holberton School.")
