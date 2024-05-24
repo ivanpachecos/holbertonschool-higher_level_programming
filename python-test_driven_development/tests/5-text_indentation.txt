@@ -11,17 +11,6 @@ This is an example text file in reStructuredText format. First import
 
 Now use it:
 
-    >>> text_indentation("sssd.")
-    sssd.
+    >>> text_indentation("Hello Holberton")
+    Hello Holberton
 
-    >>> text_indentation("sssd")
-    sssd
-
-    >>> text_indentation("Holberton School")
-    Holberton School
-
-    >>>
-    >>> text_indentation("Holberton School")
-    Holberton School
-    >>> text_indentation("Holberton School.")
-    Holberton School.

@@ -18,11 +18,7 @@ def text_indentation(text):
         indentation.
     """
 
-    characters = ['.', '?', ':']
-
-    for char in characters:
-        text = text.replace(char, char + '\n\n')
-    
-    text = text.replace("\n ", "\n")
+    if not isinstance(text, (str)):
+        raise TypeError("text must be a string")
     
     print(text)
