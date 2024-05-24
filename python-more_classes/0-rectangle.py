@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+This function is created for object programming
+"""
+
 
 class Rectangle:
     """
