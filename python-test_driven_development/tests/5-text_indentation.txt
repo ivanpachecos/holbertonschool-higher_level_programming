@@ -12,7 +12,7 @@ This is an example text file in reStructuredText format. First import
 Now use it:
 
     >>> text_indentation("Hello holberton")
-    Hello holberton>>> 
+    Hello holberton
     
     >>> text_indentation("Holberton. School? How are you: John")
     Holberton.
