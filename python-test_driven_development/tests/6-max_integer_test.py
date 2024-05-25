@@ -16,8 +16,8 @@ class TestMaxInteger(unittest.TestCase):
     def test_none(self):
         self.assertIsNone(max_integer([]))
 
-    def max_at_the_end(self):
-        self.max_at_the_end([1, 2, 3, 4, 5], 5)
+    def test_max_at_the_end(self):
+        self.assertEqual([1, 2],2)
 
 if __name__ == '__main__':
     unittest.main()
