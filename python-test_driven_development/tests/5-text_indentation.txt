@@ -14,5 +14,17 @@ Now use it:
     >>> text_indentation("Hello holberton")
     Hello holberton>>> 
     
-    >>> text_indentation("Hel he")
-    Hel he>>>
+    >>> text_indentation("Holberton. School? How are you: John")
+    Holberton.
+    <BLANKLINE>
+    School?
+    <BLANKLINE>
+    How are you:
+    <BLANKLINE>
+    John
+
+    text_indenta("Hello.Holberton")
+    Hello.
+    <BLANKLINE>
+    Holberton
+
