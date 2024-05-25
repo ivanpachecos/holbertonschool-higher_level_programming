@@ -13,3 +13,10 @@ Now use it:
 
     >>> text_indentation("Hello holberton")
     Hello holberton>>> 
+    
+    >>> text_indentation("Hello sss")
+    Hello holberton>>> 
+    
+    >>> text_indentation("  wasss the")
+       wasss the>>> 
+    
