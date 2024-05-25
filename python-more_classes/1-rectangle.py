@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This module contains a Rectangle class for representing and manipulating rectangles.
+This module contains a Rectangle class for representing and manipulating
+rectangles.
 """
 
 
@@ -22,11 +23,13 @@ class Rectangle:
     width(self):
         Gets the width of the rectangle.
     width(self, value):
-        Sets the width of the rectangle ensuring it is a non-negative integer.
+        Sets the width of the rectangle ensuring it is a non-negative
+        integer.
     height(self):
         Gets the height of the rectangle.
     height(self, value):
-        Sets the height of the rectangle ensuring it is a non-negative integer.
+        Sets the height of the rectangle ensuring it is a non-negative
+        integer.
     """
 
     def __init__(self, width=0, height=0):
