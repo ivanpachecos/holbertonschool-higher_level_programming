@@ -16,12 +16,14 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-    
+
     def __str__(self):
         """
         Print '#' with area and premeter
         """
         rect = []
+        if self.width == 0 or self.height == 0:
+            return ""
         for _ in range(self.height):
             rect.append("#" * self.width)
         return "\n".join(rect)
