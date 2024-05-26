@@ -35,6 +35,7 @@ class Rectangle:
         return "\n".join(rect)
 
     def __del__(self):
+        """ Print deleled instance """
         print("Bye rectangle...")
 
     def area(self):
