@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-""" 
-Calculate the area of a square 
+"""
+Calculate the area of a square
 """
 
 
 class Square:
-    """ 
-    Defines a square 
+    """
+    Defines a square
     """
 
     def __init__(self, size=0):
