@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Appends a string at the end of a text file (UTF8) and returns the 
+Appends a string at the end of a text file (UTF8) and returns the
 number of characters added.
 """
 
@@ -8,7 +8,7 @@ number of characters added.
 def append_write(filename="", text=""):
     """
     Appends a given text to the end of a specified file.
-    
+
     Example:
         >>> append_write("example.txt", "Hello, World!")
         13
