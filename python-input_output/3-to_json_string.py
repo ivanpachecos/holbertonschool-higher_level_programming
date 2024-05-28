@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import json
+
 """
 This module contains a function to convert a Python object to a
 JSON string.
