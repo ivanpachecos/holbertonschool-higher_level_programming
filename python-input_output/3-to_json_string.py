@@ -1,20 +1,17 @@
 #!/usr/bin/python3
 """
-Este módulo contiene una función para convertir un objeto de Python
-a una cadena JSON.
+This module contains a function to convert a Python object
+to a JSON string.
 """
 import json
 
 
 def to_json_string(my_obj):
     """
-    Convierte un objeto de Python a una cadena JSON.
+    Converts a Python object to a JSON string.
 
-    Parámetros:
-    my_obj: El objeto de Python que se desea convertir.
-
-    Retorna:
-    Una cadena JSON que representa el objeto de Python.
+    Returns:
+    A JSON string representing the Python object.
     """
     using_js = json.dumps(my_obj)
     return using_js
