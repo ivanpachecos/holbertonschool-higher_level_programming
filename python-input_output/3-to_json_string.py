@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-import json
-
 """
 Este módulo contiene una función para convertir un objeto de Python
 a una cadena JSON.
 """
+import json
 
 
 def to_json_string(my_obj):
