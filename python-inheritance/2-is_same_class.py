@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 """
-This function have that comparative to object
+This module contains the function is_same_class
 """
 
 
 def is_same_class(obj, a_class):
-    """
-    Check if an object is an instance of a specific class.
-    """
+    """return true if obj is the exact class a_class, otherwise false"""
     return (type(obj) == a_class)
