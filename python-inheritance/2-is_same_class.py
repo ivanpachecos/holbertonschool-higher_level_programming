@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+This function have that comparative to object
+"""
 
 
 def is_same_class(obj, a_class):
