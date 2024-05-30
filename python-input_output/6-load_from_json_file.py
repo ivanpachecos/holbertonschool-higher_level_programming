@@ -12,7 +12,7 @@ def load_from_json_file(filename):
     Loads data from the specified JSON file and deserializes it.
 
     Args:
-        filename (str): The name of the file from which the 
+        filename (str): The name of the file from which the
         JSON data will be loaded.
 
     Returns:
