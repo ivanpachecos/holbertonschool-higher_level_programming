@@ -16,10 +16,12 @@ def load_from_json_file(filename):
     with open(filename, 'r') as file:
         return json.load(file)
 
+
 def save_to_json_file(data, filename):
     """Writes a Python object to a file in JSON format."""
     with open(filename, 'w') as file:
         json.dump(data, file)
+
 
 def main():
     """Main function that loads, updates, and saves a
@@ -38,6 +40,7 @@ def main():
     item.extend(sys.argv[1:])
 
     save_to_json_file(item, filename)
+
 
 if __name__ == "__main__":
     main()
