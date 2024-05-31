@@ -7,6 +7,7 @@ serialize the object to a file, and deserialize the object from a file.
 """
 
 import pickle
+import os
 
 
 class CustomObject:
@@ -29,6 +30,10 @@ class CustomObject:
     @classmethod
     def deserialize(cls, filename):
         """Deserializes an object from a file."""
-        with open(filename, 'rb') as file:
-            loaded_file = pickle.load(file)
-            return loaded_file
+        if os.path.getsize(filename) > 0:
+            with open(filename, 'rb') as f_load:
+                loaded_file = pickle.Unpickler(f_load)
+                obj = loaded_file.load()
+                return obj
+        else:
+            return None
