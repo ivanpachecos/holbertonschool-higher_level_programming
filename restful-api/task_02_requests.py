@@ -24,3 +24,5 @@ def fetch_and_print_posts():
         for post in posts:
             print("{}".format(post['title']))
 
+def fetch_and_save_posts():
+    pass
