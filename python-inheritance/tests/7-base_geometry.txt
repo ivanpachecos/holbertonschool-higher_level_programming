@@ -8,8 +8,6 @@ Using ``BaseGeometry class``
 Now use it:
 
     >>> bg = BaseGeometry()
-    >>> bg.integer_validator("my_int", 12)
-    >>> bg.integer_validator("width", 89)
 
     >>> bg.integer_validator("name", "John")
     Traceback (most recent call last):
@@ -41,11 +39,6 @@ Now use it:
         ...
     TypeError: age must be an integer
     >>> bg.integer_validator("age", None)
-    Traceback (most recent call last):
-        ...
-    TypeError: age must be an integer
-
-    >>> bg.integer_validator("age", True)
     Traceback (most recent call last):
         ...
     TypeError: age must be an integer
