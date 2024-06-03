@@ -46,3 +46,8 @@ Now use it:
     Traceback (most recent call last):
         ...
     TypeError: age must be an integer
+
+    >>> bg.area()
+    Traceback (most recent call last):
+    ...
+    Exception: area() is not implemented
