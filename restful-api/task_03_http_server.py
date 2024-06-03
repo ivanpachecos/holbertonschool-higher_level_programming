@@ -25,8 +25,7 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             self.handle_not_found()
 
     def handle_root(self):
-        """Handle the root endpoint '/' by returning a simple
-        text response."""
+        """Handle the root endpoint '/' by returning a simple text response."""
         self.send_response(200)
         self.send_header("Content-type", "text/plain")
         self.end_headers()
@@ -54,7 +53,7 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
         self.send_response(404)
         self.send_header("Content-type", "application/json")
         self.end_headers()
-        response = {"message": "Endpoint not found"}
+        response = {"error": "Not Found", "message": "Endpoint not found"}
         self.wfile.write(json.dumps(response).encode())
 
 with socketserver.TCPServer(("", PORT), SimpleHTTPRequestHandler) as httpd:
