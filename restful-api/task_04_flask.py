@@ -11,8 +11,6 @@ app = Flask(__name__)
 # Diccionario de usuarios en memoria
 users = {
     "jane": {"name": "Jane", "age": 28, "city": "Los Angeles"},
-    "john": {"name": "John", "age": 30, "city": "New York"},
-    "alice": {"name": "Alice", "age": 25, "city": "San Francisco"}
 }
 
 # Ruta principal que devuelve un mensaje de bienvenida
