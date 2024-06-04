@@ -16,7 +16,7 @@ users = {
 }
 
 @app.route('/')
-def hello_world():
+def home():
     return "Hello, this is a simple API"
 
 @app.route('/data')
