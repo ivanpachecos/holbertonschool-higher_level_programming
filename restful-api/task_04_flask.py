@@ -15,7 +15,7 @@ def home():
     return 'Welcome to the Flask API!'
 
 @app.route('/data')
-def handle_data():
+def data():
     return jsonify(users)
 
 if __name__ == '__main__':
