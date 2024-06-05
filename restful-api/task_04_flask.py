@@ -14,14 +14,10 @@ users = {}
 def home():
     return 'Welcome to the Flask API!'
 
-'''
 @app.route('/data')
 def data():
-    username = (list(users.keys()))
     if not users:
         return jsonify([]), 200
-    return jsonify(username), 200
-'''
 
 if __name__ == '__main__':
     app.run()
