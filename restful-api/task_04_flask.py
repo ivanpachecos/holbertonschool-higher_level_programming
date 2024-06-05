@@ -36,7 +36,7 @@ def add_user():
     }
     return jsonify({"message": "User added successfully"}), 201
 
-@app.route('/get_user/<username>', methods=['GET'])
+@app.route('/users/<username>', methods=['GET'])
 def get_user(username):
     if username not in users:
         return jsonify({"error": "User not found"}), 404
