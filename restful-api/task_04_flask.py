@@ -7,9 +7,11 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+# Users data
 users = {
     "jane": {"name": "Jane", "age": 28, "city": "Los Angeles"},
-    }
+}
+
 @app.route('/')
 def home():
     return 'Welcome to the Flask API!'
@@ -18,7 +20,7 @@ def home():
 def data():
     if not users:
         return jsonify([]), 200
-    
+    return jsonify(list(users.values())), 200
 
 if __name__ == '__main__':
     app.run()
