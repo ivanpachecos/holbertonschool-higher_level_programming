@@ -21,7 +21,9 @@ def data():
     username = list(users.keys())
     return jsonify(username), 200
 
-
+@app.route('/status')
+def status():
+    return 'OK'
 
 if __name__ == '__main__':
     app.run()
