@@ -8,9 +8,7 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 # Users data
-users = {
-    "jane": {"name": "Jane", "age": 28, "city": "Los Angeles"},
-}
+users = {}
 
 @app.route('/')
 def home():
