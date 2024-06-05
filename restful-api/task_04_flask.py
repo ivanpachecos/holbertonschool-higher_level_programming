@@ -16,8 +16,9 @@ def home():
 
 @app.route('/data')
 def data():
-    response = list(users.keys())
-    return jsonify(response) 
+    if not users:
+        return jsonify([]), 200
+    
 
 if __name__ == '__main__':
     app.run()
