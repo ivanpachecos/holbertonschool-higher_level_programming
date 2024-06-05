@@ -18,6 +18,8 @@ def home():
 def data():
     if not users:
         return jsonify([]), 200
+    usernames = list(users.keys())
+    return usernames, 200
 
 if __name__ == '__main__':
     app.run()
