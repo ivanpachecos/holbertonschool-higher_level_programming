@@ -16,10 +16,8 @@ def home():
 
 @app.route('/data')
 def data():
-    # Extract the list of usernames from the users dictionary
-    usernames = list(users.keys())
     # Return the usernames as a JSON response
-    return jsonify(usernames), 200
+    return jsonify(list(users.keys())), 200
 
 @app.route('/status')
 def status():
