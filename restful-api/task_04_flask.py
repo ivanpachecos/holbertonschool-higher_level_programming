@@ -18,12 +18,16 @@ def home():
 def data():
     if not users:
         return jsonify([]), 200
-    username = list(users.keys())
-    return jsonify(username), 200
+    usernames = list(users.keys())
+    return jsonify(usernames), 200
 
 @app.route('/status')
 def status():
     return 'OK'
+
+@app.route('/user/<username>')
+def profile(username):
+    return f'{username}\'s profile'
 
 if __name__ == '__main__':
     app.run()
