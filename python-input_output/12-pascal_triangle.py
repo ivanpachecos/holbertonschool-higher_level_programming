@@ -10,6 +10,9 @@ You are not allowed to import any module
 
 
 def pascal_triangle(n):
+    """
+    Create a function
+    """
     if n <= 0:
         return []
 
